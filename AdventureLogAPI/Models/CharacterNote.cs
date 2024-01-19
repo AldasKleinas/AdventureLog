@@ -13,7 +13,7 @@ namespace AdventureLogAPI.Models
         public string? Body { get; set; }
 
         [Required]
-        public string Status { get; set; }
+        public string? Status { get; set; }
 
         [Required]
         public DateTime CreatedAt { get; set; }
@@ -23,9 +23,9 @@ namespace AdventureLogAPI.Models
         public int CharacterId { get; set; }
 
         [ForeignKey("UserId")]
-        public User User { get; set; }
+        public User? User { get; set; }
 
         [ForeignKey("CharacterId")]
-        public Character Character { get; set; }
+        public Character? Character { get; set; }
     }
 }

@@ -8,10 +8,10 @@ namespace AdventureLogAPI.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [Required]
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
 
         public List<Character>? Characters { get; set; }
 

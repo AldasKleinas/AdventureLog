@@ -75,9 +75,9 @@ namespace AdventureLogAPI.Models
         public DbSet<Character> Characters { get; set; }
         public DbSet<Icon> Icons { get; set; }
         public DbSet<Map> Maps { get; set; }
-        public DbSet<CharacterNote> Notes { get; set; }
+        public DbSet<CharacterNote> CharacterNotes { get; set; }
         public DbSet<Pin> Pins { get; set; }
-        public DbSet<PinNote> NotesNotes { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<PinNote> PinNotes { get; set; }
+        public new DbSet<User> Users { get; set; }
     }
 }
